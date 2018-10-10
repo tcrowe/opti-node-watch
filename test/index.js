@@ -39,7 +39,7 @@ describe("opti-node-watch", () => {
     watcher.addListener("change", evt => {
       evt.should.be.an.Object;
       evt.path.should.be.exactly(tmpPath);
-      evt.evtType.should.be.exactly("change");
+      ["change", "rename"].should.matchAny(evt.evtType);
       evt.filename.should.be.exactly("index.js");
       setTimeout(done, 200);
     });

@@ -58,7 +58,7 @@
     "prd-eslint": "eslint src",
     "prd-babel": "NODE_ENV=production babel --presets @babel/preset-env --no-comments --compact --minified --source-maps --out-dir dist src",
     "prd-chmod": "chmod +x dist/cli.js",
-    "prd": "run-s setup prd-* test",
+    "prd": "run-s clean setup prd-* test",
     "test": "mocha"
   },
   "directories": {
