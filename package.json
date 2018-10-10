@@ -1,0 +1,67 @@
+{
+  "name": "opti-node-watch",
+  "version": "0.1.0",
+  "description": "minimal file watch and restart with opti-node",
+  "author": "Tony Crowe <npm@tonycrowe.com> (https://github.com/tcrowe)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcrowe/opti-node-watch.git"
+  },
+  "homepage": "https://github.com/tcrowe/opti-node-watch#readme",
+  "keywords": [
+    "node",
+    "performance",
+    "embedded",
+    "watch",
+    "reload",
+    "process"
+  ],
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tcrowe/opti-node-watch/issues"
+  },
+  "main": "dist/index.js",
+  "bin": {
+    "opti-node-watch": "dist/cli.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-unicorn": "^6.0.1",
+    "mocha": "^5.2.0",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^1.14.3",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "async": "^3.0.1-0",
+    "chalk": "^2.4.1",
+    "lodash": "^4.17.11",
+    "micromatch": "^3.1.10",
+    "minimist": "^1.2.0",
+    "opti-node": "^0.1.1",
+    "through": "^2.3.8"
+  },
+  "scripts": {
+    "clean": "rm -rf dist .tmp",
+    "setup": "mkdir -p dist .tmp",
+    "dev-babel": "NODE_ENV=development babel --presets @babel/preset-env --source-maps --out-dir dist src || true",
+    "dev-chmod": "chmod +x dist/cli.js || true",
+    "xdev-test": "mocha || true",
+    "dev": "run-s setup dev-* || true",
+    "prd-prettier": "prettier --write 'src/**/*.js'",
+    "prd-eslint": "eslint src",
+    "prd-babel": "NODE_ENV=production babel --presets @babel/preset-env --no-comments --compact --minified --source-maps --out-dir dist src",
+    "prd-chmod": "chmod +x dist/cli.js",
+    "prd": "run-s setup prd-* test",
+    "test": "mocha"
+  },
+  "directories": {
+    "test": "test"
+  }
+}

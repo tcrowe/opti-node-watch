@@ -1,0 +1,19 @@
+{
+  "env": {
+    "node": true
+  },
+  "plugins": ["unicorn", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": [0]
+  },
+  "globals": {
+    "describe": true,
+    "it": true
+  }
+}
