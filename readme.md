@@ -111,3 +111,15 @@ npm run prd
 ```
 
 Please run `npm run prd` before commit! Thanks
+
+## Differences from nodemon
+
+I'm sure this has been done a million times now. There were certain aspects of nodemon which were inconvenient to my development process or it simply wouldn't work. I also wanted to see if I can run this with [opti-node](/tcrowe/opti-node).
+
++ Does not use [chokidar](/paulmillr/chokidar)
++ No json file config e.g. `nodemon.json`
++ No `-e` flag for extensions
++ No ignore yet
++ Less options for polling types
++ No triggering other events
++ Less ecosystem around it
