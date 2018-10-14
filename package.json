@@ -1,6 +1,6 @@
 {
   "name": "opti-node-watch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "minimal file watch and restart with opti-node",
   "author": "Tony Crowe <npm@tonycrowe.com> (https://github.com/tcrowe)",
   "repository": {
