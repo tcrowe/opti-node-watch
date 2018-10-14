@@ -148,8 +148,6 @@ if (isString(exec) === true) {
       return op;
     }, "")
     .trim();
-
-  console.log("watcherOpts.exec", "**" + watcherOpts.exec + "**");
 }
 
 //
@@ -167,8 +165,6 @@ if (isString(script) === true) {
 if (debug === true) {
   watcherOpts.debug = debug;
 }
-
-console.log("watcherOpts", watcherOpts);
 
 const watcher = createWatcher(watcherOpts);
 
