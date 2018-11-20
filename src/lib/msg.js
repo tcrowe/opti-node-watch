@@ -1,3 +1,13 @@
+/*
+
+# opti-node-watch msg
+
++ format whatever comes out of stdout or stderr
+
+See ../../COPYING for GPL 3.0 license
+
+*/
+
 const isObject = require("lodash/isObject");
 const isArray = require("lodash/isArray");
 const appKey = "opti-node-watch";

@@ -2,9 +2,15 @@
 
 opti-node-watch
 
++ watch files
++ execute node script with opti-node
++ OR run a custom shell script
+
 API doc in ../readme.md
 
 @module opti-node-watch
+
+See ../COPYING for GPL 3.0 license
 
 */
 

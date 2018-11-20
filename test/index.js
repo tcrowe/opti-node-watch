@@ -1,3 +1,9 @@
+/*
+
+See ../COPYING for GPL 3.0 license
+
+*/
+
 const fs = require("fs");
 const path = require("path");
 const isNil = require("lodash/isNil");

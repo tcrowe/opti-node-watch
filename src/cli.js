@@ -4,7 +4,15 @@
 
 opti-node-watch cli app
 
++ command line interface for opti-node-watch
++ watch files
++ have a delay
++ run a node script with opti-node
++ OR run a custom shell script
+
 API doc in ../readme.md
+
+See  ../COPYING for GPL 3.0 license
 
 */
 
