@@ -123,3 +123,13 @@ I'm sure this has been done a million times now. There were certain aspects of n
 + Less options for polling types
 + No triggering other events
 + Less ecosystem around it
+
+## Copying, license, and contributing
+
+Copyright (C) Tony Crowe <github@tonycrowe.com> (https://tcrowe.github.io) 2018
+
+Thank you for using and contributing to make opti-node-watch better.
+
+⚠️ Please run `npm run prd` before submitting a patch.
+
+⚖️ opti-node-watch is Free Software protected by the GPL 3.0 license. See [./COPYING](./COPYING) for more information. (free as in freedom)
