@@ -56,7 +56,7 @@
     "dev": "run-s setup dev-* || true",
     "prd-prettier": "prettier --write 'src/**/*.js'",
     "prd-eslint": "eslint --format unix src",
-    "prd-babel": "NODE_ENV=production babel --presets @babel/preset-env --no-comments --compact --minified --source-maps --out-dir dist src",
+    "prd-babel": "NODE_ENV=production babel --presets @babel/preset-env --no-comments --source-maps --out-dir dist src",
     "prd-chmod": "chmod +x dist/cli.js",
     "prd": "run-s clean setup prd-* test",
     "test": "mocha"
